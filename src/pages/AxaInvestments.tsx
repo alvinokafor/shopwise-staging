@@ -1,18 +1,6 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  TextField,
-  Grid,
-  Select,
-  Text,
-  Card,
-} from "@radix-ui/themes";
+import { Box, Flex, Heading } from "@radix-ui/themes";
 import AppLayout from "../layouts/AppLayout";
 import { Container, BackButton } from "../partials";
-import { Electricity as ElectricityIcon } from "@/assets/icons";
-import { PaymentMethodModal } from "@/partials/modals";
-import PriceCard from "@/components/services/price-card";
 import AxaPriceList from "@/components/services/AxaPriceList";
 
 export default function AxaInvestments() {

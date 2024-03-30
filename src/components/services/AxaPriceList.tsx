@@ -1,5 +1,4 @@
 import { Box, Text, Grid, Flex, Button } from "@radix-ui/themes";
-import { Link } from "react-router-dom";
 import { axaPricing } from "@/static/data";
 import { Dialog } from "@radix-ui/themes";
 import PriceCard from "./price-card";

@@ -1,13 +1,5 @@
-import {
-  Flex,
-  Heading,
-  IconButton,
-  Text,
-  Separator,
-  Box,
-} from "@radix-ui/themes";
+import { Flex, Heading, Text, Separator, Box } from "@radix-ui/themes";
 import { Electricity } from "@/assets/icons";
-import { ChevronRightIcon } from "@radix-ui/react-icons";
 import { TransactionDetails } from "./modals";
 
 export default function TransactionItem() {

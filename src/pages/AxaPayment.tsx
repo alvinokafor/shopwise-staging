@@ -9,17 +9,13 @@ import {
   Select,
   Grid,
   TextField,
-  Dialog,
   RadioGroup,
   Switch,
   HoverCard,
 } from "@radix-ui/themes";
 import AppLayout from "../layouts/AppLayout";
-import { BackButton } from "../partials";
-import { CartCard } from "@/components/shopping";
 import { useContext, useState } from "react";
 import { ShopContext } from "@/contexts/ShopContext";
-import { Product } from "@/lib/types/Stores";
 import {
   useStoreMutation,
   StoreAdapter,

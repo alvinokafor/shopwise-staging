@@ -5,11 +5,8 @@ import {
   HamburgerMenuIcon,
   Cross1Icon,
   HomeIcon,
-  PaperPlaneIcon,
   ArchiveIcon,
   BellIcon,
-  PersonIcon,
-  BookmarkIcon,
   Share2Icon,
 } from "@radix-ui/react-icons";
 import {
@@ -29,7 +26,7 @@ import { ShopContext } from "@/contexts/ShopContext";
 import { queryKeys } from "@/lib/constants";
 import { useStoreQuery, StoreAdapter } from "@/adapters/StoreAdapter";
 import { ICart } from "@/lib/types/Stores";
-import { Money, Shop, WalletIcon } from "@/assets/icons";
+import { Shop, WalletIcon } from "@/assets/icons";
 import { useWalletQuery, WalletAdapter } from "@/adapters/WalletAdapter";
 import { getFormattedAmount } from "@/utils";
 
@@ -66,7 +63,7 @@ export default function Navbar() {
     },
   ];
 
-  const { data: walletBalance, isLoading } = useWalletQuery(
+  const { data: walletBalance } = useWalletQuery(
     WalletAdapter.getWalletBalance,
     [queryKeys.WALLET_BALANCE],
     ""

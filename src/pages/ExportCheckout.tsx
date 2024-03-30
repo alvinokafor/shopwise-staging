@@ -10,7 +10,6 @@ import {
   Grid,
   TextField,
   Dialog,
-  RadioGroup,
 } from "@radix-ui/themes";
 import AppLayout from "../layouts/AppLayout";
 import { Container, BackButton } from "../partials";
@@ -50,7 +49,6 @@ export default function ExportCheckout() {
   // const [exchangeRate, setExchangeRate] = useState(0);
 
   const { setRedirectUrl } = useContext(UserContext) as IUserContext;
-  const [deliveryType, setDeliveryType] = useState("export");
   //@ts-expect-error no types found
   const { cartItems, getTotalCartAmount, orders } = useContext(ShopContext);
   const clearCartMutation = useStoreMutation(StoreAdapter.clearCart, "");

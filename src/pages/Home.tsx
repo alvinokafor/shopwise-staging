@@ -1,37 +1,10 @@
-import {
-  Box,
-  Tabs,
-  Card,
-  Text,
-  Inset,
-  Heading,
-  Grid,
-  Flex,
-  Button,
-} from "@radix-ui/themes";
+import { Box, Heading, Flex, Button } from "@radix-ui/themes";
 import AppLayout from "../layouts/AppLayout";
 import { Container } from "../partials";
-import {
-  Wallet,
-  BillPaymentList,
-  // RecentTransactions,
-  ShoppingList,
-  FinancialServices,
-} from "@/components/home";
 import { ProtectedRoute } from "@/utils";
-import {
-  FeaturedStores,
-  PreMadeBaskets,
-  SelectedStores,
-} from "@/components/shopping";
+import { FeaturedStores, PreMadeBaskets } from "@/components/shopping";
 import { Link } from "react-router-dom";
-import { stores } from "@/static/data";
-import { useContext } from "react";
-import { IUserContext, UserContext } from "@/contexts/UserContext";
-
 export default function Home() {
-  const { user } = useContext(UserContext) as IUserContext;
-
   return (
     <ProtectedRoute>
       <AppLayout>

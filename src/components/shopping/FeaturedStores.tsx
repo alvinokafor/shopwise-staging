@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Heading, Button } from "@radix-ui/themes";
+import { Box, Grid } from "@radix-ui/themes";
 import { StoreCard } from ".";
 import { Link } from "react-router-dom";
 import { useStoreQuery, StoreAdapter } from "@/adapters/StoreAdapter";

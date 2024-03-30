@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Grid, Heading } from "@radix-ui/themes";
 import { StoreAdapter, useStoreQuery } from "@/adapters/StoreAdapter";
-import { ProductCard, StoreProductCard } from ".";
+import { StoreProductCard } from ".";
 
 export default function PreMadeBaskets({ title = "Premade Baskets" }) {
   const { data } = useStoreQuery(

@@ -9,7 +9,6 @@ import {
   Grid,
   Box,
   Select,
-  Badge,
 } from "@radix-ui/themes";
 import { Cross1Icon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { LoadingIndicator, Confirmation } from "@/assets/icons";
@@ -23,7 +22,6 @@ import { getFormattedAmount } from "@/utils";
 import { toast } from "sonner";
 import CurrencyInput from "react-currency-input-field";
 import { TransferAdapter } from "@/adapters/TransferAdapter";
-import { DoubleArrowDownIcon, DoubleArrowUpIcon } from "@radix-ui/react-icons";
 
 export default function SendToWallet() {
   const [email, setEmail] = useState("");
@@ -225,9 +223,7 @@ export default function SendToWallet() {
                     name="input-name"
                     placeholder="Please enter an amount"
                     decimalsLimit={2}
-                    onValueChange={(value, name, values) =>
-                      setAmount(Number(value))
-                    }
+                    onValueChange={(value) => setAmount(Number(value))}
                     prefix={currency === "NGN" ? "₦" : "$"}
                     className="border border-slate-300 rounded-md px-2 py-2 text-sm font-normal"
                   />
